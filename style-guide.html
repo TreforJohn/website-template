@@ -13,8 +13,9 @@
     <link rel="shortcut icon" href="/favicon.gif" type="image/gif">
     
     <!--<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' />-->
-    <link type="text/css" href="styles/style.css" rel="stylesheet" media="screen" />
-    <link type="text/css" href="styles/print.css" rel="stylesheet" media="print">
+    <link href='http://fonts.googleapis.com/css?family=Fanwood+Text:400,400italic' rel='stylesheet' type='text/css'>
+    <link type="text/css" href="style.css" rel="stylesheet" media="screen" />
+    <!--<link type="text/css" href="styles/print.css" rel="stylesheet" media="print">-->
     <!--[if lte IE 7]>
     <link rel="stylesheet" href="/style/ie7.css" type="text/css" media="screen"/>
     <![endif]-->
@@ -28,8 +29,8 @@
 <body>
      <section class="main">
          <header>
-            <h1><a href="">Elements template (Responsive)</a></h1>
-            <p>Put together by Ruth John as a place to start</p>
+            <h1><a href="">Style Guide</a></h1>
+            <p>Put together by Rumyra as a place to start</p>
          </header>
          <section class="left-col">
              <article>
@@ -98,12 +99,53 @@
             </details>
 
             <form action="" method="post">
-                <fieldset><legend>This form needs more work</legend>
+                <fieldset><legend>Text style inputs</legend>
                     <label for="text-input">Text input</label>
-                    <input type="text" name="text-input" id="text-input" />
-
-
+                    <input type="text" name="text-input" id="text-input" placeholder="Some text" />
+                    <label for="tel-input">Tel input</label>
+                    <input type="tel" name="tel-input" id="tel-input" placeholder="+441234567890" />
+                    <label for="email-input">Email input</label>
+                    <input type="email" name="email-input" id="email-input" placeholder="example@domain.com" />
+                    <label for="search-input">Search input</label>
+                    <input type="search" name="search-input" id="search-input" placeholder="Search term" />
+                    <label for="url-input">URL input</label>
+                    <input type="url" name="url-input" id="url-input" placeholder="http://www.website.com" class="input-error" />
+                    <label for="password-input">Password input</label>
+                    <input type="password" name="password-input" id="password-input" />
+                    <label for="file-input">File input</label>
+                    <input type="file" name="file-input" id="file-input" />
+                    <label for="date-input">Date input</label>
+                    <input type="date" name="date-input" id="date-input" />
                 </fieldset>
+                <fieldset><legend>Other inputs</legend>
+                    <label for="color-input">Colour input</label>
+                    <input type="color" name="color-input" id="color-input" />
+                    <label for="number-input">Number input</label>
+                    <input type="number" name="number-input" id="number-input" min="0" max="10" />
+                    <label for="range-input">Range input</label>
+                    <input type="range" name="range-input" id="range-input" />
+                    <label for="radio-input">Radio input</label>
+                    <input type="radio" name="radio-input" id="radio-input" value="Male" />
+                    <input type="radio" name="radio-input" value="Female" />
+                    <label for="check-input">Checkbox input</label>
+                    <input type="checkbox" name="check-input" id="check-input" />
+                    <label for="select-element">Select element</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Both</option>
+                        <option>Neither</option>
+                    </select>
+                    <label for="textarea-element">Textarea element</label>
+                    <textarea cols="20" rows="5">Some writing usually goes in a text area</textarea>
+                </fieldset>
+                <fieldset><legend>Buttons, submits etc...</legend>
+                    <input type="submit" value="Submit input" />
+                    <input type="submit" value="Disabled submit input" disabled="disabled" />
+                    <input type="reset" value="Reset (Clear form)" />
+                    <button type="submit">A button that submits</button>
+                </fieldset>
+
             </form>
 
             <figure>
